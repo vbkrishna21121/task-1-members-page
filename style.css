@@ -1,0 +1,169 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+}
+.company {
+    margin:40px 0px;
+    display: flex;
+    justify-content: center;
+}
+.company h3{
+    display: inline;
+    background-color:rgb(205, 102, 220) ;
+    padding:8px 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.info .lines{
+    color:rgb(205, 102, 220);
+    font-size: 25px;
+    margin-top: 40px;
+    width: 100%;
+}
+.meet {
+   text-align: center;
+}
+.meet h3{
+    font-size: 23px;
+    margin: 30px 0px;
+}
+.meet span{
+    background-color:rgb(205, 102, 220) ;
+    padding:8px 60px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 100px;
+    font-size: 30px;
+}
+
+.profiles1, .profiles2, .profiles3{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+ .profiles3 .profile .card p{
+    color: rgb(205, 102, 220);
+}
+.profiles1  .profile .card p{
+    color: rgb(205, 102, 220);
+}
+.profiles2  .profile .card p{
+    color: rgb(205, 102, 220);
+}
+
+.profiles1 .profile .card:hover{
+    box-shadow: 2px 3px 7px rgb(205, 102, 220);
+}
+.profiles2 .profile .card:hover{
+    box-shadow: 2px 7px 13px rgb(205, 102, 220);
+}
+.profiles3 .profile .card:hover{
+    box-shadow: 2px 7px 13px rgb(205, 102, 220);
+}
+
+@media screen and (min-width:50px){
+    
+    .company h3 {
+    background-color:rgb(205, 102, 220);
+    display: block;
+    margin: 0px 8px;
+    font-size: 15px;
+    /* padding:8px 40px;
+    border: none;
+    border-radius: 5px;
+    color: white; */
+    }
+    .info .lines{
+        color:rgb(205, 102, 220);
+        font-size: 25px;
+        margin-top: 40px;
+        width: 100%;
+        display: none;
+    }
+    .meet  span{
+        font-size: 10px;
+    }
+    .profiles1, .profiles2, .profile {
+        flex: 0 0 calc(90% - 20px);
+        margin: 10px;
+        text-align: center;
+    }
+     .profiles3 .profile {
+        flex: 0 0 calc(90% - 20px);
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:481px){
+    .info {
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 15px;
+        width: 80%;
+    }
+    .info .lines{
+        color:rgb(205, 102, 220);
+        font-size: 25px;
+        margin-top: 40px;
+        width: 100%;
+        display: none;
+    }
+    .meet span{
+        font-size: 15px;
+    }
+    .profiles1, .profiles2, .profile {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+        text-align: center;
+    }
+     .profiles3 .profile {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:769px){
+    .company{
+        margin-top: 100px;
+    }
+    .company h3{
+        font-size: 30px;
+        padding: 8px 60px;
+    }
+    .info{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    .profiles1 .profile{
+        flex: 0 0 calc(50% - 40px);
+        max-width: 0 0 calc(50% - 40px);
+        margin: 10px;
+        text-align: center;
+    }
+    .profiles2 .profile{
+        flex: 0 0 calc(33.33% - 20px);
+        margin: 10px;
+        text-align: center;
+    }
+    .profiles3 .profile{
+        flex: 0 0 calc(25% - 20px);
+        margin: 10px;
+        text-align: center;
+    }
+}
